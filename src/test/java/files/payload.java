@@ -69,4 +69,15 @@ public class payload {
 				+ "\r\n"
 				+ "}";
 	}
+	
+	public static String Addbook(String isbn, String aisle) {
+		return "{\r\n"
+				+ "\r\n"
+				+ "\"name\":\"Learn Appium Automation with Java\",\r\n"
+				+ "\"isbn\":\""+isbn+"\",\r\n"
+				+ "\"aisle\":\""+aisle+"\",\r\n"
+				+ "\"author\":\"John foe\"\r\n"
+				+ "}\r\n"
+				+ "";
+	}// additional single double quote then +vairable name+
 }
