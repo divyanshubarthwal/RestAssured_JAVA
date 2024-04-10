@@ -10,6 +10,7 @@ import org.testng.Assert;
 import io.restassured.path.json.JsonPath;
 import pojo.Api;
 import pojo.GetCourse;
+import pojo.WebAutomation;
 
 public class oAuthTest {
 
@@ -38,7 +39,6 @@ public class oAuthTest {
 	 DESERIALISATION
 	 
 	 Returning object instead of string
-	 
 	
 	*/
 	GetCourse gc=	given()
@@ -62,7 +62,7 @@ public class oAuthTest {
 	
 	//Get the course names of WebAutomation
 			ArrayList<String> a= new ArrayList<String>();
-			List<pojo.WebAutomation> w=gc.getCourses().getWebAutomation();
+			List<WebAutomation> w=gc.getCourses().getWebAutomation();
 			
 			for(int j=0;j<w.size();j++)
 			{
